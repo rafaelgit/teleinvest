@@ -1,7 +1,9 @@
 #!/usr/local/bin/python3
 from telethon import TelegramClient, events
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
 api_id = os.environ.get('API_ID')
 api_hash = os.environ.get('API_HASH')
 
