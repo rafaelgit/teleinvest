@@ -14,7 +14,6 @@ client.start()
 
 @client.on(events.NewMessage)
 async def main(event):
-    print(event.chat_id)
     if (received_ids.find(str(event.chat_id)) >= 0):
         await event.forward_to(int(forward_id))
 
